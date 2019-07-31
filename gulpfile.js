@@ -21,6 +21,9 @@ gulp.task("jekyll", function() {
     return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit", shell: true});
 })
 
+
+
+
 gulp.task("watch", function(){
 
     browserSync.init({
@@ -45,4 +48,5 @@ gulp.task("watch", function(){
 
 });
 
+gulp.task("deploy", gulp.series('jekyll', 'css'));
 gulp.task("default", gulp.series('jekyll', 'css', 'watch'));
