@@ -16,12 +16,15 @@ gulp.task("css", function(){
     ;
 });
 
-//Jekyll
+//Jekyll-development
 gulp.task("jekyll", function() {
     return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit", shell: true});
 })
 
-
+// Jekyll0jekyll for production
+gulp.task("jekyllprod", function() {
+	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /su-jekyll-tsetsi"], { stdio: "inherit", shell: true });
+});
 
 
 gulp.task("watch", function(){
@@ -48,5 +51,5 @@ gulp.task("watch", function(){
 
 });
 
-gulp.task("deploy", gulp.series('jekyll', 'css'));
+gulp.task("deploy", gulp.series('jekyllprod', 'css'));
 gulp.task("default", gulp.series('jekyll', 'css', 'watch'));
