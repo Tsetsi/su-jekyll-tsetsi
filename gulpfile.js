@@ -21,6 +21,11 @@ gulp.task("jekyll", function() {
     return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit", shell: true});
 })
 
+// Jekyll0jekyll for Work
+gulp.task("jekyllwork", function() {
+	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /"], { stdio: "inherit", shell: true });
+});
+
 // Jekyll0jekyll for production
 gulp.task("jekyllprod", function() {
 	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /su-jekyll-tsetsi"], { stdio: "inherit", shell: true });
