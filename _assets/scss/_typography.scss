@@ -1,7 +1,8 @@
 
 html {
     box-sizing: border-box;
-    font: 14px/1.5 Georgia,sans-serif;
+    font: var(--font-size-body, 14px)/1.5;  
+    font-family:var (--font-family-body,Georgia,sans-serif);
 }
 
 /* Phone */
@@ -24,6 +25,7 @@ body, table, form, select, option, input, textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family:var (--font-family-headings,Georgia,sans-serif);
     font-size: 1em;
     margin-bottom: 0.5em;
     font-weight: normal;
