@@ -1,5 +1,6 @@
-.site-nav {
-
+nav {
+     display: inline-block;
+    //  align-content: flex-end;
 }
 
 .site-nav > ul {
@@ -15,6 +16,7 @@
 
 .site-nav li:first-child {
     padding-left: 0;
+   
 }
 
 .site-nav a {
@@ -27,8 +29,8 @@
 
 .site-nav li.selected > a,
 .site-nav a:hover {
-    background: var(--color-link-default);
-    color: var(--color-body-bgrd);
+    background: var(--color-link-default, #eee);
+    color: var(--color-body-bgrd, black );
 }
 
 .site-nav a i.fas:before {

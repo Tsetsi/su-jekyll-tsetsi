@@ -1,11 +1,17 @@
 
-.site {max-width: var(--layout-main-width);
+html{
+    background: rgb(228,228,230);
+    background: linear-gradient(0deg, rgba(228,228,230,1) 0%, rgba(216,216,225,1) 35%, rgba(243,249,250,1) 100%);
+}
+
+.site {
+    max-width: var(--layout-main-width);
     margin: 0 auto;
     padding: 1em;;
-
-    background-image: url(https://images.unsplash.com/photo-1546241072-48010ad2862c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+    background: url(https://images.unsplash.com/photo-1546241072-48010ad2862c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80) no-repeat center center fixed;
     background-size: cover;
 }
+  
 
 .site h1 a {
     
@@ -16,6 +22,7 @@
 .site-title {
 
     display: inline-block;
+    margin-right: 0.5em;
 }
 
 

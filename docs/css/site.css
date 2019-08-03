@@ -72,6 +72,9 @@ blockquote .author::before {
   content: '\2019';
   padding-right: 0.5em; }
 
+nav {
+  display: inline-block; }
+
 .site-nav > ul {
   display: flex;
   padding: 0; }
@@ -93,8 +96,8 @@ blockquote .author::before {
 
 .site-nav li.selected > a,
 .site-nav a:hover {
-  background: var(--color-link-default);
-  color: var(--color-body-bgrd); }
+  background: var(--color-link-default, #eee);
+  color: var(--color-body-bgrd, black); }
 
 .site-nav a i.fas:before {
   color: #000;
@@ -104,11 +107,15 @@ blockquote .author::before {
 .site-nav a:hover i.fas:before {
   color: #FFF; }
 
+html {
+  background: #e4e4e6;
+  background: linear-gradient(0deg, #e4e4e6 0%, #d8d8e1 35%, #f3f9fa 100%); }
+
 .site {
   max-width: var(--layout-main-width);
   margin: 0 auto;
   padding: 1em;
-  background-image: url(https://images.unsplash.com/photo-1546241072-48010ad2862c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+  background: url(https://images.unsplash.com/photo-1546241072-48010ad2862c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80) no-repeat center center fixed;
   background-size: cover; }
 
 .site h1 a {
@@ -116,4 +123,5 @@ blockquote .author::before {
   color: aliceblue; }
 
 .site-title {
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 0.5em; }
