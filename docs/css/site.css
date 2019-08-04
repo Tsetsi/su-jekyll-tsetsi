@@ -99,8 +99,8 @@ nav {
 
 .site-nav li.selected > a,
 .site-nav a:hover {
-  background: var(--color-link-default, #eee);
-  color: var(--color-body-bgrd, black); }
+  background: var(--color-link-default, #5b036d);
+  color: var(--color-body-bgrd, white); }
 
 .site-nav a i.fas:before {
   color: #000;
@@ -119,6 +119,9 @@ html {
   max-width: var(--layout-main-width);
   margin: 0 auto;
   padding: 1em; }
+
+.site-main h1 {
+  font-family: 'Cinzel', serif; }
 
 .site-header {
   display: flex;

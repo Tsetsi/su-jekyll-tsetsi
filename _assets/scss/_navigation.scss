@@ -29,8 +29,8 @@ nav {
 
 .site-nav li.selected > a,
 .site-nav a:hover {
-    background: var(--color-link-default, #eee);
-    color: var(--color-body-bgrd, black );
+    background: var(--color-link-default, rgb(91, 3, 109));
+    color: var(--color-body-bgrd, white );
 }
 
 .site-nav a i.fas:before {
