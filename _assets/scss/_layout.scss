@@ -2,6 +2,7 @@
 html{
     background: rgb(228,228,230);
     background: linear-gradient(0deg, rgba(228,228,230,1) 0%, rgba(216,216,225,1) 35%, rgba(243,249,250,1) 100%);
+    font-family: 'Cinzel', serif;
 }
 
 .site {
@@ -12,6 +13,10 @@ html{
     // background-size: cover;
 }
   
+.site-header{
+    display: flex;
+    justify-content: space-between;
+}
 
 .site h1 a {
     
@@ -23,6 +28,12 @@ html{
 
     display: inline-block;
     margin-right: 0.5em;
+    font-size: 2em;
+}
+
+.site-title a {
+    text-decoration: none;
+   
 }
 
 
