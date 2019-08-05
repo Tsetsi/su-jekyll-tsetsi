@@ -130,6 +130,11 @@ html {
   background: linear-gradient(0deg, #e4e4e6 0%, #d8d8e1 35%, #f3f9fa 100%);
   font-family: 'Cinzel', serif; }
 
+body {
+  height: 100vh;
+  max-width: 65rem;
+  margin: 0 auto; }
+
 .site {
   max-width: var(--layout-main-width);
   margin: 0 auto;
@@ -388,7 +393,6 @@ img:before {
 
 .button {
   margin: 0rem auto;
-  max-width: 80vw;
   height: 60vh;
   text-decoration: none;
   display: block;

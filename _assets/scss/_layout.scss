@@ -6,6 +6,12 @@ html{
     font-family: 'Cinzel', serif;
 }
 
+body{
+height: 100vh;
+max-width: 65rem;;
+margin: 0 auto;
+}
+
 .site {
     max-width: var(--layout-main-width);
     margin: 0 auto;
@@ -17,7 +23,6 @@ html{
 
 .site-main h1 {
     font-family: 'Cinzel', serif;
-
 }
   
 
