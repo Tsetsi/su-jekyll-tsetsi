@@ -1,22 +1,32 @@
 // @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 
 html{
-    background: rgb(228,228,230);
-    background: linear-gradient(0deg, rgba(228,228,230,1) 0%, rgba(216,216,225,1) 35%, rgba(243,249,250,1) 100%);
-    font-family: 'Cinzel', serif;
-    height: 100vh;
+    // background: rgb(228,228,230);
+    // background: linear-gradient(0deg, rgba(228,228,230,1) 0%, rgba(216,216,225,1) 35%, rgba(243,249,250,1) 100%);
+    // font-family: 'Cinzel', serif;
+    // background: no-repeat;
 }
 
 body{
+    // background: rgb(228,228,230);
+    // background: linear-gradient(0deg, rgba(228,228,230,1) 0%, rgba(216,216,225,1) 35%, rgba(243,249,250,1) 100%);
+    // background-repeat: no-repeat;
+    font-family: 'Cinzel', serif;
+   
 
-max-width: 65rem;;
-margin: 0 auto;
+// max-width: 65rem;;
+// margin: 0 auto;
 }
 
 .site {
     max-width: var(--layout-main-width);
     margin: 0 auto;
-    padding: 1em;;
+    padding: 1em;
+    background: rgb(228,228,230);
+    background: linear-gradient(0deg, rgba(228,228,230,1) 0%, rgba(216,216,225,1) 35%, rgba(243,249,250,1) 100%);
+    font-family: 'Cinzel', serif;
+    background: no-repeat;
+
     // background: url(https://images.unsplash.com/photo-1546241072-48010ad2862c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80) no-repeat center center fixed;
     // background-size: cover;
     // font-family: 'Cinzel', serif; 
@@ -30,6 +40,7 @@ margin: 0 auto;
 .site-header{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .site h1 a {   

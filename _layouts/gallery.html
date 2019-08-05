@@ -21,10 +21,14 @@
 
         <header class="site-header">
           
-            {% if page.subpage == true %}
+            {% if page.home == true %}
             <h1 class="site-title">
-                <!-- <a href="{{ site.title }}/">{{site.subpage}}</a> -->
+                <a href="{{ site.baseurl }}/">{{site.title}}</a>
             </h1>
+            {% else %}
+            <p class="site-title">
+                <a href="{{ site.baseurl }}/">{{site.title}}</a>
+            </p>
             {% endif %}
 
             <!-- Navigation bar is in separate file navigation.html -->
@@ -33,6 +37,13 @@
           {% endif %}
         </header>
       
+
+        {% if page.subpage == true %}
+        <p class="page-subtitle">
+            <a href="{{ site.baseurl }}/{{page.mainPage}}">{{page.subpageTitle}}</a>
+        </p>
+        {% endif %}
+
         <main class="site-main">
                 <ul class="gallery">
                         {% for item in page.gallery %}

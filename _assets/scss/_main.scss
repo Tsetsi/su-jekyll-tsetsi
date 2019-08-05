@@ -2,7 +2,9 @@
 
 .site-title {
     font-family: 'Cinzel', serif; 
-    color: var(--color-body-text,black)  
+    color: var(--color-body-text,black) ; 
+    margin: 0;
+
 }
 
 .button{
@@ -53,4 +55,20 @@
 .button:hover{
 opacity: 0.7;
 outline: 3px solid darkgray;
+}
+
+
+@media (max-width:880px){
+    .button .title {
+        font-size: 22px;
+    }
+
+    .button .sub-title {
+        font-size: 18px;
+    }
+
+    .button{
+        height: 200px;
+    }
+
 }

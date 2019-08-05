@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 
 .container{
-    margin: 4rem;
-    max-width: 100vw;
+    // margin: 4rem;
+    // max-width: 100vw;
     display: grid;
     justify-content: center;
     padding:0;
@@ -11,7 +11,6 @@
     grid-gap: 0.5em;  
     grid-auto-flow:row dense;
 }
-
 
 .post {
     grid-column: span 2;

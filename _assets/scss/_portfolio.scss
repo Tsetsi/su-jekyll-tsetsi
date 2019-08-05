@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 .container-main{
-    margin: 4rem auto;
-    max-width: 60rem;;
+    // margin: 4rem auto;
+    // max-width: 60rem;;
     display: grid;
     justify-content: center;
     padding:0;
@@ -15,13 +15,13 @@
     position: relative;
     overflow: hidden;
     /* width: 100vw; */
-    height: 80vh;
+     height: 60vh;
 }
 
 .content img {
     position: absolute;
     height: 100%;
-    width: auto;
+    width: 100%;
   
     z-index: 1;
 }
@@ -68,7 +68,7 @@
 
 
 /* Tablet */
-@media (max-width:880px){
+@media (max-width:1024px){
     .container-main  {
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
