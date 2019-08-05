@@ -121,16 +121,12 @@ html {
   margin: 0 auto;
   padding: 1em; }
 
-.site-main h1 {
-  font-family: 'Cinzel', serif; }
-
 .site-header {
   display: flex;
   justify-content: space-between; }
 
 .site h1 a {
-  text-decoration: none;
-  color: aliceblue; }
+  text-decoration: none; }
 
 .site-title {
   display: inline-block;
@@ -369,6 +365,10 @@ img:before {
   margin-bottom: -1em;
   margin-left: 2em;
   margin-right: 2em; }
+
+.site-title {
+  font-family: 'Cinzel', serif;
+  color: var(--color-body-text, black); }
 
 .button {
   margin: 0rem auto;
