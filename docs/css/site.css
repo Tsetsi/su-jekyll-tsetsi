@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 html {
   box-sizing: border-box;
   font: var(--font-size-body, 14px)/1.5;
@@ -368,3 +369,45 @@ img:before {
   margin-bottom: -1em;
   margin-left: 2em;
   margin-right: 2em; }
+
+.button {
+  margin: 0rem auto;
+  max-width: 80vw;
+  height: 60vh;
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  padding: 0;
+  /* background-image: url(./images/main-screen.jpg); */
+  background-size: cover;
+  justify-items: stretch; }
+
+.button {
+  background-image: url(/images/main-screen.jpg);
+  content: '';
+  width: 100%;
+  height: 400px; }
+
+.button p {
+  margin: 0;
+  padding: 0.2em;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  background-size: cover; }
+
+.button .title {
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+  color: aliceblue;
+  letter-spacing: 5px; }
+
+.button .sub-title {
+  text-align: center;
+  color: aliceblue;
+  font-size: 30px;
+  text-transform: uppercase; }
+
+.button:hover {
+  opacity: 0.7;
+  outline: 3px solid darkgray; }
