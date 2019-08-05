@@ -3,6 +3,20 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+:root {
+  --font-size-body: 14px;
+  --font-family-body: 'Source Serif Pro', serif;
+  --font-family-headings: 'Source Serif Pro', serif;
+  --font-size-body-larger: 16px;
+  --font-size-body-big: 18px;
+  --font-size-body-huge: 20px;
+  --layout-main-width: 64em;
+  --color-body-text: #000;
+  --color-body-bgrd: #FFF;
+  --color-link-default: rgb(91, 3, 109);
+  --color-border-default: #999;
+  --spacing-layout-elements: 2em; }
+
 html {
   box-sizing: border-box;
   font: var(--font-size-body, 14px)/1.5;
@@ -29,8 +43,8 @@ body, table, form, select, option, input, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: var --font-family-headings, Georgia, sans-serif;
   font-size: 1em;
-  margin-bottom: 0.5em;
-  font-weight: normal; }
+  margin-bottom: 0.2em;
+  font-weight: 500; }
 
 h1 {
   font-size: 2.6em; }
@@ -51,14 +65,14 @@ h6 {
   font-size: 1em; }
 
 p, ul, ol {
-  padding-bottom: 1.5em; }
+  padding-bottom: 0.5em; }
 
 ul, ol {
   padding-left: 2em; }
 
 ul ul, ol ul, ul ol, ol ol {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em; }
+  padding-top: 0.2em;
+  padding-bottom: 0.2em; }
 
 ol > li > ol > li {
   list-style-type: lower-roman; }
@@ -120,6 +134,9 @@ html {
   max-width: var(--layout-main-width);
   margin: 0 auto;
   padding: 1em; }
+
+.site-main h1 {
+  font-family: 'Cinzel', serif; }
 
 .site-header {
   display: flex;
@@ -349,8 +366,7 @@ img:before {
   padding-bottom: 0.3em; }
 
 .about-media-content {
-  text-align: center;
-  text-align: left; }
+  text-align: center; }
 
 .about-content:last-child:after {
   display: block;
