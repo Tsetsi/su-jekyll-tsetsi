@@ -1,9 +1,12 @@
-//************ Title page animations ************
+//************ Title page & gallery animations ************
 
-.button, .gallery li{
+.button, .gallery li, .content a, .site-nav a, .page-subtitle a:hover{
     transition: all 0.2s ease-out;
 }
 
-.button:hover, .gallery li:hover {
+.button:hover, .gallery li:hover, .content a:hover, .site-nav a:hover, .page-subtitle a:hover {
     transition: all 0.2s ease-in;
 }
+
+
+

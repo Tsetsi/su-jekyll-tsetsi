@@ -40,7 +40,8 @@
 
         {% if page.subpage == true %}
         <p class="page-subtitle">
-            <a href="{{ site.baseurl }}/{{page.mainPage}}">{{page.subpageTitle}}</a>
+            <a href="{{ site.baseurl }}/{{page.mainPage}}">back</a>
+            <!-- {{page.subpageTitle}} -->
         </p>
         {% endif %}
 
@@ -69,7 +70,9 @@
         </aside>
         <footer class="site-footer">
 
-            <p>All rights reserved &copy;  </p>
+                {% if page.title and page.home !=true  %}
+                {% include footer.html location="footer" %}
+                {% endif %}
             <!-- {% include navigation.html location="footer" %} -->
         </footer>
     </div>

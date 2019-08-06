@@ -45,12 +45,15 @@
             <!-- {% include main-page.html location="main" %}  -->
     
         </main>
+        {% if page.sidebar ==true %}
         <aside class="site-sidebar">
-            
+            {{content}}
         </aside>
+        {% endif %}
         <footer class="site-footer">
-
-            <p>All rights reserved &copy;  </p>
+                {% if page.title and page.home !=true  %}
+                {% include footer.html location="footer" %}
+                {% endif %}
             <!-- {% include navigation.html location="footer" %} -->
         </footer>
     </div>

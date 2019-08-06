@@ -1,0 +1,40 @@
+// @import url('https://use.fontawesome.com/releases/v5.9.0/css/all.css');
+// @import url('https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css');
+// @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+
+
+.site-footer {
+    display: flex;
+    align-items: stretch;
+    font-family: 'Cinzel', serif; 
+    justify-content: space-between;
+    color: var(--color-link-default, rgb(91, 3, 109)) ; 
+
+}
+
+.site-footer-text{
+    display: block;
+     padding:1em;
+    color:var(---color-link-default, rgb(91, 3, 109));
+    font-weight: 500;
+    font-size: 24px;
+}
+.site-footer-icons{
+    display: flex;
+    padding: 1em;
+    align-items: center;
+}
+.site-footer-icons:last-child{
+// margin-right: 5em;
+
+}
+.site-footer-icons a {
+    text-decoration: none;
+    color: var(--color-link-default, rgb(91, 3, 109));
+    padding: 5px;
+    font-size: 32px;
+}
+
+.site-footer-icons a:hover{
+    color: var(--color-body-text,violet); 
+}
