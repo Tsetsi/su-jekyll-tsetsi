@@ -535,10 +535,10 @@ body {
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(30, 200px); } }
 
-.buttonm, .gallery li, .content a, .site-nav a, .page-subtitle a:hover {
+.button, .buttonm, .gallery li, .content a, .site-nav a, .page-subtitle a:hover {
   transition: all 0.2s ease-out; }
 
-.buttonm:hover, .gallery li:hover, .content a:hover, .site-nav a:hover, .page-subtitle a:hover {
+.button:hover, .buttonm:hover, .gallery li:hover, .content a:hover, .site-nav a:hover, .page-subtitle a:hover {
   transition: all 0.2s ease-in; }
 
 .main, .page-portfolio {
