@@ -115,7 +115,8 @@ nav {
 .site-nav li.selected > a,
 .site-nav a:hover {
   background: var(--color-link-default, #5b036d);
-  color: var(--color-body-bgrd, white); }
+  color: var(--color-body-bgrd, white);
+  text-decoration: underline; }
 
 .site-nav a i.fas:before {
   color: #000;
