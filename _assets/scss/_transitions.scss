@@ -1,0 +1,15 @@
+// Main page loaded transition effect
+ .main, .page-portfolio {
+    opacity: 0;
+    transform: translateY(-1em);
+    transition: opacity 0.4s ease-in, transform 0.4s ease-in-out;
+    transition-delay: 0.3s;
+}
+.main.loaded, .page-portfolio.loaded {
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+    transition-delay: 1s;
+}
+
+
+
