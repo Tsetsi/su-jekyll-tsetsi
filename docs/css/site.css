@@ -185,66 +185,71 @@ body {
   text-decoration: none; }
 
 .container-main {
+  margin: 0;
+  max-width: 100vw;
   display: grid;
   justify-content: center;
   padding: 0;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: auto;
+  grid-auto-rows: 60vh;
   grid-gap: 0.5em;
-  grid-auto-flow: row dense;
-  height: 60vh; }
+  grid-auto-flow: row dense; }
 
-.content {
-  position: relative;
-  overflow: hidden;
-  /* width: 100vw; */
-  height: 60vh; }
-
-.content img {
-  width: 100%;
-  height: auto; }
-
-.content-name {
-  text-align: center; }
-
-.content-name, h2 {
-  position: absolute;
-  display: block;
-  top: 10%;
-  left: 50%;
-  width: 100%;
-  color: #FFFFFF;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Cinzel', serif;
-  z-index: 10;
-  text-align: center; }
-
-.content a {
-  position: absolute;
-  display: flex;
-  top: 30%;
-  left: 50%;
-  /* width: 50%; */
-  color: #FFFFFF;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  font-family: 'Cinzel', serif;
+.buttonm {
+  max-width: 80vw;
+  height: 60vh;
   text-decoration: none;
-  text-align: center;
-  border: 1px solid #fff;
-  margin: 0;
-  padding: 0.5em 1em 0.5em 1em;
-  /* background: #FFFFFF; */ }
+  display: block;
+  padding-top: 2em;
+  background-size: cover;
+  justify-items: stretch;
+  text-align: center; }
 
-.content a:hover {
-  border: 1px solid rgba(4, 37, 14, 0.7);
-  background: rgba(206, 226, 212, 0.7); }
+.buttonm a {
+  /* background-image: url(./images/main-screen.jpg);background-image: url(./images/main-screen.jpg); */
+  content: '';
+  width: 100%;
+  height: 100%;
+  outline: 0px solid darkgray;
+  outline: 0px solid white;
+  opacity: 1;
+  transition: all 0.2s ease-out; }
+
+.buttonm.main1 {
+  background-image: url("../images/portfolio-editorial.jpg");
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.buttonm.main2 {
+  background-image: url("../images/portfolio-foods.jpg");
+  overflow: hidden; }
+
+.buttonm.main3 {
+  background-image: url("../images/portfolio-bakedgoods.jpg");
+  overflow: hidden; }
+
+.buttonm span {
+  margin: 0;
+  padding: 0.2em;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  /* background-size: cover; */
+  /* text-align: center; */
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: aliceblue;
+  letter-spacing: 5px; }
+
+.buttonm:hover {
+  transition: all 0.2s ease-in;
+  opacity: 0.8;
+  outline: 3px solid #000001; }
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .container-main {
+  .container {
     grid-template-columns: 1fr;
     grid-auto-rows: auto; }
   .content img {
@@ -416,67 +421,46 @@ img:before {
   margin: 0; }
 
 .button {
-  margin: 0 auto;
-  height: 60vh;
-  text-decoration: none;
   display: block;
+  margin: 0 auto;
+  text-decoration: none;
   justify-content: center;
   padding: 0;
-  /* background-image: url(./images/main-screen.jpg); */
-  background-size: cover;
-  justify-items: stretch; }
-
-.button {
   background-image: url("../images/main-screen.jpg");
+  background-size: cover;
   content: '';
   width: 100%;
   height: 60vh;
   outline: 1px solid white;
   opacity: 1;
   position: relative; }
-
-.button:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /* overflow: hidden; */
-  content: '';
-  width: auto;
-  height: auto; }
-
-.button p {
-  margin: 0;
-  padding: 0.2em;
-  font-family: 'Cinzel', serif;
-  text-transform: uppercase;
-  background-size: cover; }
-
-.button .title {
-  font-weight: 500;
-  font-size: 60px;
-  text-align: center;
-  color: aliceblue;
-  letter-spacing: 5px; }
-
-.button .sub-title {
-  text-align: center;
-  color: aliceblue;
-  font-size: 30px;
-  text-transform: uppercase; }
-
-.button:hover {
-  opacity: 0.7;
-  outline: 1px solid #0a0a0a; }
-
-@media (max-width: 880px) {
+  .button p {
+    margin: 0;
+    padding: 0.2em;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    background-size: cover; }
   .button .title {
-    font-size: 22px; }
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 5px; }
   .button .sub-title {
-    font-size: 18px; }
-  .button {
-    height: 200px; } }
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    text-transform: uppercase; }
+  .button:hover {
+    opacity: 0.7;
+    outline: 1px solid #0a0a0a; }
+  @media (max-width: 880px) {
+    .button .title {
+      font-size: 22px; }
+    .button .sub-title {
+      font-size: 18px; }
+    .button {
+      height: 200px; } }
 
 body {
   padding: 1em; }
@@ -552,10 +536,10 @@ body {
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(30, 200px); } }
 
-.button, .gallery li, .content a, .site-nav a, .page-subtitle a:hover {
+.buttonm, .gallery li, .content a, .site-nav a, .page-subtitle a:hover {
   transition: all 0.2s ease-out; }
 
-.button:hover, .gallery li:hover, .content a:hover, .site-nav a:hover, .page-subtitle a:hover {
+.buttonm:hover, .gallery li:hover, .content a:hover, .site-nav a:hover, .page-subtitle a:hover {
   transition: all 0.2s ease-in; }
 
 .main, .page-portfolio {

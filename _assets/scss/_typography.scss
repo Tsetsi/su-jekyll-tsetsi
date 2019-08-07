@@ -68,14 +68,12 @@ blockquote {
 }
 
 blockquote .author {
-
     font-style: italic;
     text-align: right;
     opacity: 0.5;
 }
 
 blockquote .author::before {
-
 display: inline-block;
 content: '\2019';
 padding-right: 0.5em;

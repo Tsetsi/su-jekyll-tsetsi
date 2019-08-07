@@ -7,86 +7,71 @@
 
 }
 
-.button{
-    margin: 0 auto;  
-    // max-width: 80vw;
-    height: 60vh;
-    text-decoration: none;
-    display: block;
-    justify-content: center;
-    padding:0;
-    /* background-image: url(./images/main-screen.jpg); */
-    background-size: cover;
-    justify-items: stretch;
-}  
 
 .button{
+    display: block;
+    margin: 0 auto;  
+    text-decoration: none;
+    justify-content: center;
+    padding: 0;
     background-image: url('../images/main-screen.jpg');
+    background-size: cover;
     content: '';
     width: 100%;
     height: 60vh;
     outline: 1px solid white;
     opacity:1;
     position: relative;
-    // transition: all 0.2s ease-out;
-}
-
-.button:before{
   
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    /* overflow: hidden; */
-    content: '';
-    width: auto;
-    height: auto;
-   
-}
 
-.button p {  
-    margin: 0;
-    padding: 0.2em;
-    font-family: 'Cinzel', serif;
-    text-transform: uppercase;   
-    background-size: cover;
-}
-
-.button .title {
-    font-weight: 500;
-    font-size: 60px;
-    text-align: center;
-    color: aliceblue;
-     letter-spacing: 5px;
-}
-
-.button .sub-title {
-    text-align: center;
-    color: aliceblue;
-    font-size: 30px;
-    text-transform: uppercase; 
-
-}
-
-.button:hover{
-opacity: 0.7;
-outline: 1px solid  rgb(10, 10, 10);
-// transition: all 0.2s ease-in;
-}
-
-
-
-
-
-@media (max-width:880px){
-    .button .title {
-        font-size: 22px;
+   & p {  
+        margin: 0;
+        padding: 0.2em;
+        font-family: 'Cinzel', serif;
+        text-transform: uppercase;   
+        background-size: cover;
     }
 
-    .button .sub-title {
-        font-size: 18px;
+    & .title {
+        font-weight: 500;
+        font-size: 60px;
+        text-align: center;
+        color: aliceblue;
+         letter-spacing: 5px;
     }
 
-    .button{
-        height: 200px;
+    & .sub-title {
+        text-align: center;
+        color: aliceblue;
+        font-size: 30px;
+        text-transform: uppercase;  
     }
 
+    &:hover{
+        opacity: 0.7;
+        outline: 1px solid  rgb(10, 10, 10);
+        // transition: all 0.2s ease-in;
+        }  
+
+
+
+        @media (max-width:880px){
+            & .title {
+                font-size: 22px;
+            }
+        
+            & .sub-title {
+                font-size: 18px;
+            }
+        
+            &{
+                height: 200px;
+            }
+        
+        }
 }
+
+
+
+
+
