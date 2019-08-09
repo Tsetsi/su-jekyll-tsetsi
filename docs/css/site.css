@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 :root {
   --font-size-body: 14px;
-  --font-family-body: 'Source Serif Pro', serif;
-  --font-family-headings: 'Source Serif Pro', serif;
+  --font-family-body: 'Cinzel';
+  --font-family-headings: 'Cinzel';
   --font-size-body-larger: 16px;
   --font-size-body-big: 18px;
   --font-size-body-huge: 20px;
@@ -129,7 +127,7 @@ nav {
 .site-footer {
   display: flex;
   align-items: stretch;
-  font-family: 'Cinzel', serif;
+  font-family: --font-family-headings, serif;
   justify-content: space-between;
   color: var(--color-link-default, #5b036d); }
 
@@ -233,7 +231,7 @@ body {
 .buttonm span {
   margin: 0;
   padding: 0.2em;
-  font-family: 'Cinzel', serif;
+  font-family: var(--font-family-headings, sans-serif);
   text-transform: uppercase;
   /* background-size: cover; */
   /* text-align: center; */
@@ -415,7 +413,7 @@ img:before {
   margin-right: 2em; }
 
 .site-title {
-  font-family: 'Cinzel', serif;
+  font-family: var(--font-family-body, sans-serif);
   color: var(--color-body-text, black);
   margin: 0; }
 
@@ -436,7 +434,7 @@ img:before {
   .button p {
     margin: 0;
     padding: 0.2em;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-family-headings, sans-serif);
     text-transform: uppercase;
     background-size: cover; }
   .button .title {
@@ -503,7 +501,9 @@ body {
   grid-row: span 1; }
 
 .gallery img {
-  display: block; }
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .gallery img {
   width: 100%;

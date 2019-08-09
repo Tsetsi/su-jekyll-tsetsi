@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+// @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|PT+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 
 .site-title {
-    font-family: 'Cinzel', serif; 
+    font-family: var(--font-family-body, sans-serif); 
     color: var(--color-body-text,black) ; 
     margin: 0;
 
@@ -27,7 +27,7 @@
    & p {  
         margin: 0;
         padding: 0.2em;
-        font-family: 'Cinzel', serif;
+        font-family: var(--font-family-headings, sans-serif);
         text-transform: uppercase;   
         background-size: cover;
     }
