@@ -6,7 +6,7 @@
 .site-footer {
     display: flex;
     align-items: stretch;
-    font-family: --font-family-headings, serif; 
+    font-family: var(--font-family-headings, sans-serif); 
     justify-content: space-between;
     color: var(--color-link-default, rgb(91, 3, 109)) ; 
 

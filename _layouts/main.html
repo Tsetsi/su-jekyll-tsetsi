@@ -10,19 +10,16 @@
     {% if page.css %}
     <link rel="stylesheet" href="{{ site.baseurl }}/css/pages/{{ page.css }}.css">
     {% endif %}
-    <script src="{{ site.baseurl }}/scripts/site.js"></script>
-    
+    <script src="{{ site.baseurl }}/scripts/site.js"></script> 
 </head>
 <body class="
 {% if page.title %}page-{{ page.title | slugify }}{% endif %}
 {% if post.title %}post{% endif %}
 {% if page.home %}main{% endif %}
-
 ">
     <div class="site">
 
         <header class="site-header">
-          
             {% if page.home == true %}
             <h1 class="site-title">
                 <a href="{{ site.baseurl }}/">{{site.title}}</a>
@@ -45,7 +42,6 @@
             {% endif %}
             {{content}}
             <!-- {% include main-page.html location="main" %}  -->
-    
         </main>
         {% if page.sidebar ==true %}
         <aside class="site-sidebar">
