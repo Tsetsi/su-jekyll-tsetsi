@@ -426,11 +426,11 @@ img:before {
   box-shadow: 0px 0px 2px 2px rgba(68, 68, 68, 0.6);
   border-radius: 50px; }
 
-.about-media-content h1 {
+.about-media-content h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Cinzel', serif; }
+  font-family: var(--font-family-headings, serif); }
 
 .about-content {
   font-family: var(--font-family-posts);
@@ -456,6 +456,100 @@ img:before {
   margin-bottom: -1em;
   margin-left: 2em;
   margin-right: 2em; }
+
+@media (max-width: 1023px) {
+  .about-media, .about-media-content {
+    grid-column: span 2;
+    grid-row: span 1; } }
+
+.contact-form {
+  margin: 0 auto;
+  max-width: 80vw;
+  font-family: var(--font-family-posts); }
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5em;
+  grid-auto-flow: row dense; }
+
+fieldset {
+  border: none;
+  margin: 1em;
+  padding: 1em; }
+
+.full-name {
+  display: block;
+  grid-column: span 1;
+  grid-row: span 1; }
+
+input {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  background: darkgrey;
+  border: none;
+  border-radius: 3px;
+  color: white; }
+
+.full-name {
+  display: block;
+  grid-column: span 1;
+  grid-row: span 1;
+  border: none;
+  flex-grow: 1; }
+
+.phone-number {
+  display: block;
+  grid-column: span 1;
+  grid-row: span 1;
+  border: none;
+  flex-grow: 1; }
+
+.email {
+  display: block;
+  grid-column: span 1;
+  grid-row: span 1;
+  border: none; }
+
+.message {
+  display: block;
+  margin: 0;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 4; }
+
+.message input {
+  height: 100%; }
+
+.submit-button {
+  display: block;
+  grid-column: 2;
+  grid-row-start: 4;
+  grid-row: span 1;
+  border: none;
+  justify-self: end; }
+
+.submit-button button {
+  padding: 1em 1.5em 1em 1.5em;
+  border: none;
+  border-radius: 5px;
+  background: darkgray;
+  color: dimgray;
+  font-family: var(--font-family-headings); }
+
+.submit-button button:hover {
+  background: darkmagenta;
+  color: white; }
+
+@media (max-width: 1023px) {
+  .contact-form form {
+    grid-gap: 0.1em; }
+  .full-name, .phone-number, .email, .message, .submit-button {
+    grid-column: span 2;
+    grid-row: span 1;
+    margin: 0; } }
 
 .site-title {
   font-family: var(--font-family-body, sans-serif);

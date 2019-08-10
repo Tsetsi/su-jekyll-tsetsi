@@ -8,7 +8,7 @@
     justify-content: center;
     padding:0;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;;
+    grid-auto-rows: 1fr;
     grid-gap: 0.5em;  
     margin: 0 auto;
     max-width: 50vw;
@@ -53,11 +53,12 @@ img:before{
 
 }
 
-.about-media-content h1 {
+.about-media-content h2 {
     text-align: center;
     text-transform: uppercase;   
     font-weight: 500;
-    font-family: 'Cinzel', serif;
+    font-family: var(--font-family-headings,serif);
+  
 }
 
 .about-content{
@@ -83,4 +84,21 @@ img:before{
     margin-bottom: -1em;
     margin-left: 2em;
     margin-right: 2em; 
+}
+
+
+@include resolution(tablet) {
+    .about-media, .about-media-content{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+
+@include resolution(mobile) {
+    .about-media, .about-media-content{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+   
 }
