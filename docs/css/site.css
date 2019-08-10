@@ -207,7 +207,6 @@ blockquote .author::before {
   grid-auto-flow: row dense; }
 
 .buttonm {
-  max-width: 80vw;
   height: 60vh;
   text-decoration: none;
   display: block;
@@ -281,19 +280,15 @@ blockquote .author::before {
 
 .post {
   margin: 0 auto;
-  /* max-width: 50vw; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-row-gap: 0.2em;
   justify-items: center;
   justify-content: center;
-  /* grid-column: span 3; */
-  /* justify-self: center; */
   color: dimgray;
   background: lightgrey;
   padding: 0.5em;
-  /* margin-bottom: 1em; */
   position: relative; }
 
 .post-title {
@@ -309,8 +304,6 @@ blockquote .author::before {
   grid-column-end: span 2;
   display: block;
   overflow: hidden;
-  /* width: 50%; */
-  /* height: auto; */
   justify-content: center; }
 
 .post-media img {
@@ -337,18 +330,8 @@ blockquote .author::before {
   grid-column-start: 3;
   grid-column-end: span 2;
   padding-bottom: 0.3em;
-  /* position: relative; */
   text-align: center;
-  /* text-transform: uppercase;    */
-  /* font-weight: 500; */
-  /* font-family: var(--font-family-headings, sans-serif); */ }
-
-.media-content {
-  /* display: inline-block; */
-  /* width: 50%; */
-  /* height: auto; */
-  position: relative;
-  /* padding-bottom: 0.3em;    */ }
+  position: relative; }
 
 .post-content {
   font-family: var(--font-family-posts, sans-serif);
@@ -389,6 +372,13 @@ blockquote .author::before {
 .read-more:hover {
   background: var(--color-link-default, #5b036d);
   color: var(--color-body-bgrd, white); }
+
+@media (max-width: 1023px) {
+  .post-media, .media-content {
+    grid-column-start: 1;
+    grid-column-end: span 4; }
+  .post-title {
+    font-size: 1.5em; } }
 
 .about {
   max-width: 100vw;
