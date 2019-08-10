@@ -18,7 +18,7 @@
     height: 60vh;
     text-decoration: none;
     display: block;
-    padding-top:2em;
+    // padding-top:2em;
     background-size: cover;
     justify-items: stretch;
     text-align: center;
@@ -50,9 +50,10 @@
     background-image: url("../images/portfolio-bakedgoods.jpg");
     overflow: hidden;
 }
-.buttonm span {  
-    margin: 0;
-    padding: 0.2em;
+.buttonm span { 
+    display: block; 
+    margin-top: 0.5em;
+    padding: 0;
     font-family: var(--font-family-headings, sans-serif);
     text-transform: uppercase;   
     /* background-size: cover; */

@@ -88,12 +88,13 @@ blockquote .author::before {
   content: '\2019';
   padding-right: 0.5em; }
 
-nav {
-  display: inline-block; }
+.site-nav {
+  display: block; }
 
 .site-nav > ul {
   display: flex;
-  padding: 0; }
+  padding: 0;
+  justify-content: center; }
 
 .site-nav li {
   display: block;
@@ -106,7 +107,7 @@ nav {
 .site-nav a {
   display: block;
   padding: 0.5em 1em;
-  border-radius: 0.3em;
+  border-radius: 0.1em;
   background: #EEE;
   text-decoration: none; }
 
@@ -152,23 +153,20 @@ nav {
 .site-footer-icons a:hover {
   color: var(--color-body-text, violet); }
 
-body {
-  font-family: 'Cinzel', serif; }
-
 .site {
   max-width: var(--layout-main-width);
   margin: 0 auto;
   padding: 1em;
   background: #e4e4e6;
   background: linear-gradient(0deg, #e4e4e6 0%, #d8d8e1 35%, #f3f9fa 100%);
-  font-family: 'Cinzel', serif;
+  font-family: var(--font-family-body, sans-serif);
   background: no-repeat; }
 
 .site-main h1 {
-  font-family: 'Cinzel', serif; }
+  font-family: var(--font-family-body, sans-serif); }
 
 .site-header {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: baseline; }
 
@@ -176,7 +174,7 @@ body {
   text-decoration: none; }
 
 .site-title {
-  display: inline-block;
+  display: block;
   margin-right: 0.5em;
   font-size: 2em; }
 
@@ -199,7 +197,6 @@ body {
   height: 60vh;
   text-decoration: none;
   display: block;
-  padding-top: 2em;
   background-size: cover;
   justify-items: stretch;
   text-align: center; }
@@ -229,8 +226,9 @@ body {
   overflow: hidden; }
 
 .buttonm span {
-  margin: 0;
-  padding: 0.2em;
+  display: block;
+  margin-top: 0.5em;
+  padding: 0;
   font-family: var(--font-family-headings, sans-serif);
   text-transform: uppercase;
   /* background-size: cover; */

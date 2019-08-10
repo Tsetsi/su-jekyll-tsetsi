@@ -1,11 +1,12 @@
-nav {
-     display: inline-block;
+.site-nav {
+     display: block;
     //  align-content: flex-end;
 }
 
 .site-nav > ul {
     display: flex;
     padding: 0;
+    justify-content: center;
 }
 
 .site-nav li {
@@ -22,7 +23,7 @@ nav {
 .site-nav a {
     display: block;
     padding: 0.5em 1em;
-    border-radius: 0.3em;
+    border-radius: 0.1em;
     background: #EEE;
     text-decoration: none;
 }

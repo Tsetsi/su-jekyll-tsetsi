@@ -35,7 +35,6 @@
           {% endif %}
         </header>
       
-
         {% if page.subpage == true %}
         <p class="page-subtitle">
             <a href="{{ site.baseurl }}/{{page.mainPage}}">back</a>
@@ -47,10 +46,14 @@
                 <ul class="gallery">
                         {% for item in page.gallery %}
                         <li{% if item.aspectratio %} class="{{ item.aspectratio }}"{% endif %}>
-                        
+                          
                                 <span><img src="{{ item.file }}&w=300" alt=""></span>
                              
-                            
+                                <a href="{{ item.file }}&w=960" target="_blank"></a>
+                                    <!-- <span><img src="{{ item.file }}&w=600" alt=""></span> -->
+                                    <!-- <strong>{{ item.caption }}</strong> -->
+                                </a>
+                                <!-- <label class="close" for="gallery_item_{{ forloop.index }}"><i class="fas fa-times"></i></label> -->
                         </li>
                         {% endfor %}
                     </ul>
