@@ -46,14 +46,9 @@
                 <ul class="gallery">
                         {% for item in page.gallery %}
                         <li{% if item.aspectratio %} class="{{ item.aspectratio }}"{% endif %}>
-                          
                                 <span><img src="{{ item.file }}&w=300" alt=""></span>
                              
-                                <a href="{{ item.file }}&w=960" target="_blank"></a>
-                                    <!-- <span><img src="{{ item.file }}&w=600" alt=""></span> -->
-                                    <!-- <strong>{{ item.caption }}</strong> -->
-                                </a>
-                                <!-- <label class="close" for="gallery_item_{{ forloop.index }}"><i class="fas fa-times"></i></label> -->
+                                <a href="{{ item.file }}&w=960" target="_blank"></a>     
                         </li>
                         {% endfor %}
                     </ul>
@@ -66,7 +61,6 @@
                 {% if page.title and page.home !=true  %}
                 {% include footer.html location="footer" %}
                 {% endif %}
-            <!-- {% include navigation.html location="footer" %} -->
         </footer>
     </div>
 

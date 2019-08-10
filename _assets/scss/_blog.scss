@@ -6,7 +6,7 @@
     display: grid;
     justify-content: stretch;
     padding:0;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     grid-auto-rows: auto;
     grid-gap: 0.5em;  
     grid-auto-flow:row dense;
@@ -124,24 +124,30 @@
 
 
 @include resolution(tablet) {
+    .container {
+        margin: 2em;
+    }
     .post-media, .media-content{
         grid-column-start: 1;
         grid-column-end: span 4;  
     }
     .post-title{
-        font-size: 1.5em;
+        font-size: 1.0em;
     }
 }
 
 
 @include resolution(mobile) {
+    .container {
+        margin: 0.2em;
+    }
     .post-media, .media-content{
         grid-column-start: 1;
         grid-column-end: span 4;  
     }
 
     .post-title{
-        font-size: 1.5em;
+        font-size: 1.0em;
     }
    
 }
