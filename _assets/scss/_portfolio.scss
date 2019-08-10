@@ -71,16 +71,51 @@
     outline: 3px solid rgb(0, 0, 1);
 }
 
-/* Tablet */
-@media (max-width:1024px){
+
+
+
+@include resolution(tablet) {
+
     .container-main  {
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
-        // grid-auto-rows: min-content;
+        grid-auto-rows: min-content;
+    }
+
+    .buttonm span{   
+        font-size: 32px;
+    }
+}
+
+
+@include resolution(mobile) {
+
+    .container-main  {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-auto-rows: min-content;
     }
 
     .buttonm span{
-        font-size: 18px;
+        margin-top: 1.5em;
+        font-size: 22px;
     }
-
 }
+
+
+
+// @media (max-width:1024px){
+    // .container-main  {
+        // grid-template-columns: 1fr;
+        // grid-auto-rows: auto;
+        // grid-auto-rows: min-content;
+    // }
+
+    // .buttonm span{
+        // font-size: 18px;
+    // }
+
+// }
+
+
+

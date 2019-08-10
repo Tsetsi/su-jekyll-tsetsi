@@ -43,3 +43,39 @@
 .site-nav a:hover i.fas:before {
     color: #FFF;
 }
+
+
+
+
+@include resolution(tablet) {
+
+    .site-nav > ul {
+        flex-wrap: wrap;
+    }
+    .site-nav ul li {
+        width: 100%;
+     
+    }
+
+    .site-nav li{
+        margin-bottom: 1.5em;
+        padding-left: 0;
+    }
+
+}
+
+
+@include resolution(mobile) {
+
+    .site-nav > ul {
+        flex-wrap: wrap;
+    }
+    .site-nav ul li {
+        width: 100%;
+    }
+
+    .site-nav li{
+        margin-bottom: 0.5em;
+        padding-left: 0;
+    }
+}

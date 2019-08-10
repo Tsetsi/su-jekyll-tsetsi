@@ -126,6 +126,15 @@ blockquote .author::before {
 .site-nav a:hover i.fas:before {
   color: #FFF; }
 
+@media (max-width: 1023px) {
+  .site-nav > ul {
+    flex-wrap: wrap; }
+  .site-nav ul li {
+    width: 100%; }
+  .site-nav li {
+    margin-bottom: 0.5em;
+    padding-left: 0; } }
+
 .site-footer {
   display: flex;
   align-items: stretch;
@@ -153,6 +162,10 @@ blockquote .author::before {
 
 .site-footer-icons a:hover {
   color: var(--color-body-text, violet); }
+
+@media (max-width: 1023px) {
+  .site-footer-text, .site-footer-icons a {
+    font-size: 18px; } }
 
 .site {
   max-width: var(--layout-main-width);
@@ -245,13 +258,15 @@ blockquote .author::before {
   opacity: 0.8;
   outline: 3px solid #000001; }
 
-/* Tablet */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .container-main {
     grid-template-columns: 1fr;
-    grid-auto-rows: auto; }
+    grid-auto-rows: auto;
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content; }
   .buttonm span {
-    font-size: 18px; } }
+    margin-top: 1.5em;
+    font-size: 22px; } }
 
 .container {
   margin: 4rem;
